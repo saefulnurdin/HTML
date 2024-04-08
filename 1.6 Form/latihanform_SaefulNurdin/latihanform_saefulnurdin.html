@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width>, initial-scale=1.0" />
+    <title>Latihan HTML - Form</title>
+  </head>
+  <body>
+    <form method="post">
+      <table>
+        <!--Header-->
+        <header>
+          <h1>Formulir Pendaftaraan Pelatihan BLK Karawang</h1>
+        </header>
+        <!--Nik-->
+        <tr>
+          <td><label for="nik">NIK</label></td>
+          <td><input type="text" name="nik" id="nik" required /></td>
+        </tr>
+        <!--Nama-->
+        <tr>
+          <td><label for="nama">Nama</label></td>
+          <td><input type="text" name="nama" id="nik" required /></td>
+        </tr>
+        <!--Tempat Lahir-->
+        <tr>
+          <td><label for="tempatlahir">Tempat Lahir</label></td>
+          <td>
+            <input type="text" name="tempatlahir" id="tempatlahir" required />
+          </td>
+        </tr>
+        <!--Tanggal Lahir-->
+        <tr>
+          <td><label for="tanggallahir">Tanggal Lahir</label></td>
+          <td>
+            <input type="date" name="tanggallahir" id="tanggallahir" required />
+          </td>
+        </tr>
+        <!--Jenis Keamin-->
+        <tr>
+          <td><label>Jenis Kelamin</label></td>
+          <td>
+            <label for="pria">Pria</label>
+            <input type="radio" name="jkel" id="pria" value="pria" required />
+            <label for="wanita">Wanita</label>
+            <input
+              type="radio"
+              name="jkel"
+              id="wanita"
+              value="wanita"
+              required
+            />
+          </td>
+        </tr>
+        <!--Pendidikan-->
+        <tr>
+          <td><label for="pendidikan">Pendidikan Terakhir</label></td>
+          <td>
+            <select name="pendidikan" id="pendidikan" required>
+              <option value="">Pilih Pendidikan</option>
+              <option value="sma">SD</option>
+              <option value="smk">SMP</option>
+              <option value="smk">SMK</option>
+              <option value="smk">SMA</option>
+            </select>
+          </td>
+        </tr>
+        <!--Alamat-->
+        <tr>
+          <td><label for="alamat">Alamat</label></td>
+          <td>
+            <textarea
+              name="alamat"
+              id="alamt"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <!--Nomer Telepon-->
+        <tr>
+          <td><label for="telepon">Nomor Telepon</label></td>
+          <td>
+            <input
+              type="text"
+              name="telepon"
+              id="telepon"
+              value="+62"
+              required
+            />
+          </td>
+        </tr>
+        <!--Email-->
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="example@gmail.com"
+            />
+          </td>
+        </tr>
+        <!--Alasan Mengikuti Pelatihan-->
+        <tr>
+          <td><label for="alasan">Alasan Mengikuti Pelatihan</label></td>
+          <td>
+            <textarea
+              name="alasan"
+              id="alasan"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <!--Tahu Informasi Pelatihan Darimana-->
+        <tr>
+          <td>
+            <label>Tahu Informasi Pelatihan Darimana?</label>
+          </td>
+          <!--Sosial Media-->
+          <td>
+            <input type="checkbox" name="informasi" id="sosmed" />
+            <label for="sosmed">Sosial Media</label>
+
+            <input type="checkbox" name="informasi" id="brosur" />
+            <label for="brosur">Brosur</label>
+
+            <input type="checkbox" name="informasi" id="tahun" />
+            <label for="tahun">Teman</label>
+
+            <input type="checkbox" name="informasi" id="keluarga" />
+            <label for="keluarga">Keluarga</label>
+          </td>
+        </tr>
+        <!--Tombol Submit dan Reset-->
+        <tr>
+          <td>
+            <input
+              type="submit"
+              value="Submit"
+              onclick="alert('Data Berhasil Diinput')"
+            />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

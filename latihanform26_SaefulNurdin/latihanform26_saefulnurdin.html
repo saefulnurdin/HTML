@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan HTML - Form Registrasi</title>
+  </head>
+  <body>
+    <form method="post">
+      <header align="center">
+        <h2>FORUM REGISTRASI NASABAH BARU <br />BANK BANKTUT INDONESIA</h2>
+      </header>
+      <table align="center">
+        <tr>
+          <td><label for="namadepan">Nama Depan</label></td>
+          <td><label>:</label></td>
+          <td><input type="text" name="namadepan" id="namadepan" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="namabelakang">Nama Belakang</label></td>
+          <td><label>:</label></td>
+          <td><input type="text" name="namabelakang" id="namabelakang" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><label>:</label></td>
+          <td><input type="email" name="email" id="email" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><label>:</label></td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="kpassword">Konfirmasi Password</label></td>
+          <td><label>:</label></td>
+          <td><input type="password" name="kpassword" id="kpassword" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="jkel">Jenis Kelamin</label></td>
+          <td><label>:</label></td>
+          <td>
+            <input type="radio" name="jkel" id="pria" />
+            <label for="pria">Laki-laki</label>
+            <input type="radio" name="jkel" id="wanita" />
+            <label for="wanita">Perempuan</label>
+          </td>
+        </tr>
+        <!--Hobi-->
+        <tr>
+          <td><label for="hobi">Hobi</label></td>
+          <td><label>:</label></td>
+          <td>
+            <input type="checkbox" name="music" id="music" /><label for="music"
+              >Music</label
+            >
+            <input type="checkbox" name="traveling" id="traveling" />
+            <label for="traveling">Traveling</label>
+            <input type="checkbox" name="olahraga" id="olahraga" />
+            <label for="olahraga">Olahraga</label>
+            <input type="checkbox" name="mancing" id="mancing" />
+            <label for="mancing">Mancing</label>
+          </td>
+        </tr>
+        <!--Sumber Penghasilan-->
+        <tr>
+          <td><label for="penghasilan">Sumber Penghasilan</label></td>
+          <td><label>:</label></td>
+          <td>
+            <select name="penghasilan" id="penghasilan">
+              <option>--Pilih Sumber Penghasilan--</option>
+              <option value="karyawan">Bekerja Sebagai Karyawan</option>
+              <option value="jual">Jual Barang dan Jasa</option>
+              <option value="skill">Menjual Skill atau Keahlian</option>
+              <option value="usaha">Menjalankan Usaha</option>
+              <option value="marketing">Network Marketing</option>
+              <option value="investasi">Jual Beli Investasi</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="usia">Usia</label></td>
+          <td><label>:</label></td>
+          <td>
+            <input type="text" name="usia" id="usia" /><label for=""
+              >Tahun</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><label for="alamat">Alamat</label></td>
+          <td><label>:</label></td>
+          <td>
+            <textarea name="alamat" id="alamat" cols="40" rows="10"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="bio">Bio</label></td>
+          <td><label>:</label></td>
+          <td>
+            <textarea name="bio" id="bio" cols="40" rows="10"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="5" align="center">
+            <input type="submit" value="Simpan" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

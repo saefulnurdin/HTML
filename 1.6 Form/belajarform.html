@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML - Form</title>
+  </head>
+  <body>
+    <h2>Belajaar membuat form</h2>
+    <!--Cara membuat form-->
+    <!--1. Buat tag <form>-->
+    <form name="registrasi">
+      <table border="1">
+        <tr>
+          <th>Belajar Membuat Form</th>
+        </tr>
+        <tr>
+          <td>
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama" id="nama" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama" id="nama" required />
+          </td>
+        </tr>
+      </table>
+      <label for="nama">Nama:</label>
+      <input type="text" name="nama" id="nama" required /> <br />
+      <label for="alamat">Alamat</label>
+      <input type="text" name="alamat" id="alamat" required /> <br />
+      <label for="telepon">Telepon</label>
+      <input type="text" name="telepon" id="telepon" /> <br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" /> <br />
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" /> <br />
+      <!--attribut value pada type=submit digunakan untuk memberi nama tombol-->
+      <input type="submit" value="Kirim" />
+      <input type="reset" />
+    </form>
+    <!--Form-->
+    <!--1. Nama-->
+    <!--2. Tempat tanggal lahir-->
+    <!--3. jenis kelamin-->
+    <!--4. No. HP-->
+    <!--5. Pekerjaan-->
+    <!--6. Hobi-->
+    <!--7. ada tombol submit dan reset-->
+    <form name="data">
+      <h2>Membuat Form Input</h2>
+      <label for="name">Nama:</label>
+      <input type="text" name="name" id="name" /> <br />
+      <label for="tanggalLahir">Tempat, tanggal lahir:</label>
+      <input type="text" name="tanggalLahir" id="tanggalLahir" /> <br />
+      <label for="jenisKelamin">Jenis Kelamin:</label>
+      <input type="text" name="jenisKelamin" id="jenisKelamin" /> <br />
+      <label for="hp">No. HP:</label>
+      <input type="text" name="hp" id="hp" /> <br />
+      <label for="pekerjaan">Pekerjaan:</label>
+      <input type="text" name="pekerjaan" id="pekerjaan" /> <br />
+      <label for="hobi">Hobi:</label>
+      <input type="text" name="hobi" id="hobi" /> <br />
+      <input type="submit" value="Kirim" />
+      <input type="reset" value="reset" />
+      <input type="button" value="Hello" onclick="alert('Selamat Datang')" />
+    </form>
+    <h2>Login</h2>
+    <form name="login">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" /> <br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" /> <br />
+      <input type="submit" value="Login" />
+    </form>
+    <form>
+      <!--Checkbook-->
+      <label for="masak">Masak</label>
+      <input type="checkbox" name="hoby" id="masak" />
+      <label for="bersepeda">Bersepeda</label>
+      <input type="checkbox" name="hoby" id="masak" /> <br />
+      <!--input radio-->
+      <label>Jenis Kelamin</label>
+      <label for="pria">Pria</label>
+      <input type="radio" name="jkel" id="pria" value="pria" />
+      <label for="wanita">Wanita</label>
+      <input type="radio" name="jkel" id="wanita" value="wanita" /> <br />
+      <label for="tgl">Tanggal Lahir</label>
+      <input type="date" id="tgl" /><br />
+      <label for="tel">Telepon</label>
+      <input type="tel" name="telepon" id="tel" value="08" />
+    </form>
+    <!--section-->
+    <form action="">
+      <select name="jkel" id="jkel">
+        <option value="">Silahkan Pilih</option>
+        <option value="Pria">Pria</option>
+        <option value="Wanita">Wanita</option>
+      </select>
+      <br />
+      <label for="komentar">Komentar</label>
+      <textarea name="komentar" id="komentar" cols="30" rows="10"></textarea>
+    </form>
+  </body>
+</html>

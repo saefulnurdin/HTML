@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan HTML - Form</title>
+  </head>
+  <body>
+    <form method="post">
+      <table align="center">
+        <tr>
+          <th colspan="5"><h1>Membuat Formulir Pendaftaran E-KTP</h1></th>
+        </tr>
+
+        <!--Nomer Antrian-->
+        <tr>
+          <td><label for="antrian">Nomor Antrian</label></td>
+          <td><label>:</label></td>
+          <td><input type="text" name="antrian" id="antrian" required /></td>
+        </tr>
+
+        <!--Nama-->
+        <tr>
+          <td><label for="nama">Nama</label></td>
+          <td><label>:</label></td>
+          <td><input type="text" name="nama" id="nama" required /></td>
+        </tr>
+
+        <!--Tempat, Tanggal Lahir-->
+        <tr>
+          <td><label for="ttl">Tempat, Tanggal Lahir</label></td>
+          <td><label>:</label></td>
+          <td>
+            <input type="text" name="ttl" id="ttl" required />
+            <input type="date" />
+          </td>
+        </tr>
+
+        <!--Setatus Pernikahan-->
+        <tr>
+          <td><label for="pernikahan">Setatus Pernikahan</label></td>
+          <td><label>:</label></td>
+          <td>
+            <input type="text" name="pernikahan" id="pernikahan" required />
+          </td>
+        </tr>
+
+        <!--Alamat-->
+        <tr>
+          <td><label for="alamat">Alamat</label></td>
+          <td><label>:</label></td>
+          <td>
+            <textarea name="" id="" cols="30" rows="3" required></textarea>
+          </td>
+        </tr>
+
+        <!--Desa-->
+        <tr>
+          <td><label for="desa">Desa</label></td>
+          <td><label>:</label></td>
+          <td><input type="text" name="desa" id="desa" required /></td>
+        </tr>
+
+        <!--Kecamatan-->
+        <tr>
+          <td><label for="kec">Kecamatan</label></td>
+          <td><label>:</label></td>
+          <td><input type="text" name="kec" id="kec" required /></td>
+        </tr>
+
+        <!--Kabupaten-->
+        <tr>
+          <td><label for="kab">Kabupaten</label></td>
+          <td><label>:</label></td>
+          <td><input type="text" name="kab" id="kab" required /></td>
+        </tr>
+
+        <!--Provinsi-->
+        <tr>
+          <td><label for="prov">Provinsi</label></td>
+          <td><label>:</label></td>
+          <td><input type="text" name="prov" id="prov" required /></td>
+        </tr>
+
+        <!--Kode Pos-->
+        <tr>
+          <td><label for="pos">Kode Pos</label></td>
+          <td><label>:</label></td>
+          <td><input type="text" name="pos" id="pos" required /></td>
+        </tr>
+
+        <!--Jenis Kelamin-->
+        <tr>
+          <td><label>Jenis Kelamin</label></td>
+          <td><label>:</label></td>
+          <td>
+            <input type="radio" name="jkel" id="pria" required />
+            <label for="pria">Pria</label>
+            <input type="radio" name="jkel" id="wanita" required />
+            <label for="wanita">Wanita</label>
+          </td>
+        </tr>
+
+        <!--Agama-->
+        <tr>
+          <td><label for="">Agama</label></td>
+          <td><label for="">:</label></td>
+          <td>
+            <select name="jkel" id="jkel" required>
+              <option value="">--Silahkan Pilih--</option>
+              <option value="islam">Islam</option>
+              <option value="kristen">Kristen</option>
+              <option value="protesta">Protestan</option>
+              <option value="katolik">Katolik</option>
+              <option value="hindu">Hindu</option>
+              <option value="budhha">Buddha</option>
+            </select>
+          </td>
+        </tr>
+
+        <!--Tombol Daftar dan Reset-->
+        <tr>
+          <td colspan="5" align="center">
+            <input type="submit" value="Daftar" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
